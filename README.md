@@ -1,8 +1,4 @@
-# 🎓 Concept Drift Detection System for Student Learning Behavior
-
-## 🚀 Live AI System
-
-https://fluorescent-drift-sense-flow.base44.app
+# 🎓 Concept Drift Detection System for Student Learning Behavior 
 
 ## 📌 Problem Statement
 
@@ -42,10 +38,6 @@ This AI system analyzes student activity and performance data to detect behavior
 
 Student Data → Data Preprocessing → Feature Extraction → Machine Learning Model → Drift Detection → Alerts
 
-## 🎥 Demo
-
-Live System:
-https://fluorescent-drift-sense-flow.base44.app
 ## 👩‍💻 Author
 
 Jhansi M
