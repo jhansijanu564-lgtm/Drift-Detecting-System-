@@ -1,22 +1,27 @@
-# Concept Drift Detection System for Student Learning Behavior
+import numpy as np
+from sklearn.linear_model import LogisticRegression
 
-## Live AI System
+# Example student performance data
+X = np.array([
+    [80, 5],
+    [85, 6],
+    [78, 5],
+    [60, 2],
+    [55, 1]
+])
 
-https://fluorescent-drift-sense-flow.base44.app
+# Labels (1 = good learning pattern, 0 = drift detected)
+y = np.array([1, 1, 1, 0, 0])
 
-## Project Description
+model = LogisticRegression()
+model.fit(X, y)
 
-This AI system detects changes in student learning behavior using machine learning.
+# Test new student data
+new_data = np.array([[58, 2]])
 
-## Features
+prediction = model.predict(new_data)
 
-* Student learning data analysis
-* Performance monitoring
-* Concept drift detection
-* Alert system
-
-## Technologies Used
-
-* Artificial Intelligence
-* Machine Learning
-* Data Analysis
+if prediction == 0:
+    print("Concept Drift Detected")
+else:
+    print("Learning Pattern Normal")
